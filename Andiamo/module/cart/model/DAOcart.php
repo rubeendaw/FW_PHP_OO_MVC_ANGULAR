@@ -11,6 +11,16 @@ include($path . "model/connect.php");
       $res = mysqli_query($conexion, $sql)->fetch_object();
       Conectar::close($conexion);
       return $res;
+    }
+    
+    function show_purchase($user){
+			// $sql = "UPDATE travels SET likes=likes + 1 WHERE id='$id'";
+			$sql = "SELECT SUM(total) total, date FROM checkout WHERE user = '$user' GROUP BY date";
+
+			$conexion = Conectar::con();
+            $res = mysqli_query($conexion, $sql);
+            Conectar::close($conexion);
+            return $res;
 		}
 
     function insert_cart($data, $user){

@@ -29,8 +29,8 @@
               <a id="spanish"><img src="view/assets/images/flags/es.png" width="22px"></a>
               <a id="english"><img src="view/assets/images/flags/en.png" width="22px"></a>
               <a id="valencia"><img src="view/assets/images/flags/ca.png" width="22px"></a>
-              <li><a href="#"><span class="icon icon-person"></span></a></li>
-              <li><a class="redheart" href="index.php?page=controller_like&op=view"><span class="icon icon-heart"></span></a></li>
+              <!-- <li><a href="#"><span class="icon icon-person"></span></a></li> -->
+              <li><a class="redheart" href="index.php?page=controller_profile&op=view"><span class="icon icon-heart"></span></a></li>
               <li>
                 <a href="index.php?page=controller_cart&op=view" class="site-cart">
                   <span class="icon icon-shopping_cart"></span>

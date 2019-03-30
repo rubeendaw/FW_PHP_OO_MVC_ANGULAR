@@ -22,8 +22,8 @@ if (isset($_GET['page'])) {
 		case "controller_cart";
 			include("module/cart/controller/".$_GET['page'].".php");
 			break;
-		case "controller_like";
-			include("module/like/controller/".$_GET['page'].".php");
+		case "controller_profile";
+			include("module/profile/controller/".$_GET['page'].".php");
 			break;
 		case "index";
 			include("module/inicio/".$_GET['page'].".php");

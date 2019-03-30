@@ -52,6 +52,26 @@
           }
         break;
 
+        case 'show_purchase':
+            try {$username = $_SESSION['username'];
+                $daocart = new DAOcart();
+                $rdo = $daocart->show_purchase($username);
+            } catch (Exception $e) {
+                echo json_encode("error");
+            }
+            
+            if (!$rdo) {
+                echo json_encode("error");
+            }else{
+                $prod = array();
+                foreach ($rdo as $value) {
+                    array_push($prod, $value);
+                }
+                echo json_encode($prod);
+                exit();
+            }
+        break;
+
         default;
             include("view/inc/error404.php");
         break;
