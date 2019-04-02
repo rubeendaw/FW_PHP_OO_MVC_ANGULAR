@@ -15,7 +15,17 @@ include($path . "model/connect.php");
 
 		function show_like($user){
 			// $sql = "UPDATE travels SET likes=likes + 1 WHERE id='$id'";
-			$sql = "SELECT country, destination, price FROM travels WHERE id IN (SELECT travel FROM likes WHERE username = '$user')";
+			$sql = "SELECT id, country, destination, price FROM travels WHERE id IN (SELECT travel FROM likes WHERE username = '$user')";
+
+			$conexion = Conectar::con();
+            $res = mysqli_query($conexion, $sql);
+            Conectar::close($conexion);
+            return $res;
+		}
+
+		function delete_like($id,$user){
+			// $sql = "UPDATE travels SET likes=likes + 1 WHERE id='$id'";
+			$sql = "DELETE FROM likes WHERE travel = $id AND username = '$user'";
 
 			$conexion = Conectar::con();
             $res = mysqli_query($conexion, $sql);

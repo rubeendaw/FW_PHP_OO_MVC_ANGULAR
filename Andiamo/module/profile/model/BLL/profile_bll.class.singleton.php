@@ -26,4 +26,16 @@ class profile_bll{
     public function update_profile_BLL($arrArgument){
       return $this->dao->update_profile_DAO($this->db, $arrArgument);
     }
+
+    public function obtain_countries_BLL($url){
+        return $this->dao->obtain_countries_DAO($url);
+    }
+  
+    public function obtain_provinces_BLL(){
+     return $this->dao->obtain_provinces_DAO();
+     }
+  
+    public function obtain_cities_BLL($arrArgument){
+      return $this->dao->obtain_cities_DAO($arrArgument);
+    }
 }

@@ -30,6 +30,23 @@
             }
         break;
 
+        case 'del_like':
+            try{
+                $username = $_SESSION['username'];
+                $daolike = new DAOlike();
+                $rdo = $daolike->delete_like($_GET['id'],$username);
+            } catch (Exception $e) {
+                echo json_encode("error");
+            }
+            
+            if (!$rdo) {
+                echo json_encode("error");
+            }else{
+                echo json_encode($rdo);
+                exit();
+            }
+        break;
+
         case 'show_like':
             try {$username = $_SESSION['username'];
                 $daolike = new DAOlike();
