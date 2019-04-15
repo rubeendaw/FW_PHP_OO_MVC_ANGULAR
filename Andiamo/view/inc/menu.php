@@ -26,9 +26,9 @@
                 	  	<option value="val">Valencià</option>
                   </select>
 	            </li> -->
-              <a id="spanish"><img src="view/assets/images/flags/es.png" width="22px"></a>
-              <a id="english"><img src="view/assets/images/flags/en.png" width="22px"></a>
-              <a id="valencia"><img src="view/assets/images/flags/ca.png" width="22px"></a>
+              <a id="spanish"><img src="<?php echo FLAGS_PATH ?>es.png" width="22px"></a>
+              <a id="english"><img src="<?php echo FLAGS_PATH ?>en.png" width="22px"></a>
+              <a id="valencia"><img src="<?php echo FLAGS_PATH ?>ca.png" width="22px"></a>
               <li><a href="index.php?page=controller_login&op=view"><span class="icon icon-person"></span></a></li>
               <li><a class="redheart" href="index.php?page=controller_like&op=view"><span class="icon icon-heart"></span></a></li>
               <li>

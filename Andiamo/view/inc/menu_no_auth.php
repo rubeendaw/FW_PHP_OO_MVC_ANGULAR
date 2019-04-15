@@ -26,11 +26,11 @@
                 	  	<option value="val">Valencià</option>
                   </select>
 	            </li> -->
-              <a id="spanish"><img src="view/assets/images/flags/es.png" width="22px"></a>
-              <a id="english"><img src="view/assets/images/flags/en.png" width="22px"></a>
-              <a id="valencia"><img src="view/assets/images/flags/ca.png" width="22px"></a>
+              <a id="spanish"><img src="<?php echo FLAGS_PATH ?>es.png" width="22px"></a>
+              <a id="english"><img src="<?php echo FLAGS_PATH ?>en.png" width="22px"></a>
+              <a id="valencia"><img src="<?php echo FLAGS_PATH ?>ca.png" width="22px"></a>
               <!-- <li><a href="#"><span class="icon icon-person"></span></a></li> -->
-              <li><a class="redheart" href="index.php?page=controller_profile&op=view"><span class="icon icon-heart"></span></a></li>
+              <li><a class="redheart" href="<?php amigable('?module=profile&function=view_profile'); ?>"><span class="icon icon-heart"></span></a></li>
               <li>
                 <a href="index.php?page=controller_cart&op=view" class="site-cart">
                   <span class="icon icon-shopping_cart"></span>
@@ -38,7 +38,7 @@
                 </a>
               </li>
               <li id="avatar"></li>
-              <li><a class="redheart" href="index.php?page=controller_login&op=logout"><span class="icon icon-exit_to_app"></span></a></li>
+              <li><a class="redheart" href="<?php amigable('?module=login&function=view_login'); ?>"><span class="icon icon-exit_to_app"></span></a></li>
               <li class="d-inline-block d-md-none ml-md-0"><a href="index.php?page=controller_cart&op=view" class="site-menu-toggle js-menu-toggle"><span class="icon-menu"></span></a></li>
             </ul>
           </div>
@@ -61,10 +61,11 @@
             </li>
           </ul>
         </li> -->
+        <li><a data-tr="profile" href="<?php amigable('?module=profile&function=view_profile'); ?>"></a></li>
         <li><a data-tr="home" href="index.php?page=controller_home&op=list"></a></li>
         <li><a data-tr="shop" href="index.php?page=controller_shop&op=list"></a></li>
         <!-- <li><a data-tr="crud" href="index.php?page=controller_travel&op=list"></a></li> -->
-        <li><a data-tr="contact" href="index.php?page=controller_contact&op=view"></a></li>
+        <li><a data-tr="contact" href="<?php amigable('?module=contact&function=view_contact'); ?>"></a></li>
         
         <!-- <li><form method="POST">
                 	<select name="lang">

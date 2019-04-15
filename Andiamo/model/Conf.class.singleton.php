@@ -1,7 +1,7 @@
 <?php
-	$path=$_SERVER['DOCUMENT_ROOT'].'/www/FW_PHP_OO_MVC_JQUERY/Andiamo/';
-    define('SITE_ROOT', $path);
-    define('MODEL_PATH',SITE_ROOT.'model/');
+	// $path=$_SERVER['DOCUMENT_ROOT'].'/www/FW_PHP_OO_MVC_JQUERY/Andiamo/';
+    // define('SITE_ROOT', $path);
+    // define('MODEL_PATH',SITE_ROOT.'model/');
 
     class Conf {
         private $_userdb;

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<functions>
+    <function>
+        <name>view_profile</name>
+        <uri>view_profile</uri>
+    </function>
+    <function>
+        <name>upload_avatar</name>
+        <uri>upload_avatar</uri>
+    </function>
+    <function>
+        <name>alta_profile</name>
+        <uri>alta_profile</uri>
+    </function>
+    <function>
+        <name>delete_avatar</name>
+        <uri>delete_avatar</uri>
+    </function>
+    <!-- <function>
+        <name>subir_prof</name>
+        <uri>subir_prof</uri>
+    </function> -->
+    <function>
+        <name>load_profile</name>
+        <uri>load_profile</uri>
+    </function>
+    <function>
+        <name>close_session</name>
+        <uri>close_session</uri>
+    </function>
+    <function>
+        <name>load_countries</name>
+        <uri>load_countries</uri>
+    </function>
+    <function>
+        <name>load_provinces</name>
+        <uri>load_provinces</uri>
+    </function>
+    <function>
+        <name>load_towns</name>
+        <uri>load_towns</uri>
+    </function>
+</functions>

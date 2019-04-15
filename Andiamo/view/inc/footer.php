@@ -34,7 +34,7 @@
       <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
         <h3 class="footer-heading mb-4">Promo</h3>
         <a href="#" class="block-6">
-          <img src="view/assets/images/andiamo_footer.jpg" alt="Image placeholder" class="img-fluid rounded mb-4">
+          <img src="<?php echo IMG_PATH ?>andiamo_footer.jpg" alt="Image placeholder" class="img-fluid rounded mb-4">
         </a>
       </div>
       <div class="col-md-6 col-lg-3">
@@ -49,3 +49,40 @@
         </div>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="<?php echo JS_PATH ?>jquery-3.3.1.min.js"></script>
+    <script src="<?php echo JS_PATH ?>jquery-ui.js"></script>
+    <script src="<?php echo JS_PATH ?>popper.min.js"></script>
+    <script src="<?php echo JS_PATH ?>bootstrap.min.js"></script>
+    <script src="<?php echo JS_PATH ?>owl.carousel.min.js"></script>
+    <script src="<?php echo JS_PATH ?>jquery.magnific-popup.min.js"></script>
+    <script src="<?php echo JS_PATH ?>aos.js"></script>
+
+    <script src="<?php echo JS_PATH ?>main.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="<?php echo JS_PATH ?>datatables.min.js"></script>
+    <script type="text/javascript" src="<?php echo JS_PATH ?>lang.js"></script>
+
+    <!-- <script src="module/travel/model/validate_travel.js"></script>
+    <script src="module/contact/model/contact.js"></script>
+    <script src="module/shop/model/shop.js"></script>
+    <script src="module/home/model/home.js"></script>
+    <script src="module/like/model/like.js"></script> -->
+    <script src="<?php echo TRANSLATIONS ?>lang.js"></script>
+    <script src="<?php echo JS_PATH ?>ini.js"></script>
+    <script src="<?php echo JS_PATH ?>jqueryTranslator.js"></script>
+    <script src="<?php echo JS_PATH ?>dropzone.js"></script>
+    <!-- <script src="module/login/model/validate_login.js"></script> -->
+    <!-- <script src="module/cart/model/cart.js"></script> -->
+    <script src="<?php echo PROFILE_JS_PATH ?>controller_profile.js"></script>
+    <script src="<?php echo TEST_JS_PATH ?>test.js"></script>
+
+
+
+    
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  </footer>
+</html>

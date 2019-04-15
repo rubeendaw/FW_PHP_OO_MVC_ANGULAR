@@ -70,7 +70,7 @@ function upload_files() {
         */
 
     ////////////////////////////////////////////////////////////////////////////
-    $upfile = $_SERVER['DOCUMENT_ROOT'].'/www/FW_PHP_OO_MVC_JQUERY/Andiamo/view/assets/images/profile/'.$_FILES['file']['name'];//Cambiado avatar por file
+    $upfile = MEDIA_PATH.$_FILES['file']['name'];//Cambiado avatar por file
     if (is_uploaded_file($_FILES['file']['tmp_name'])){
         if (is_file($_FILES['file']['tmp_name'])) {
             // $idUnico = rand();
@@ -79,7 +79,7 @@ function upload_files() {
             $_SESSION['nombreFichero'] = $nombreFichero;
             $copiarFichero = true;
             // I use absolute route to move_uploaded_file because this happens when i run ajax
-            $upfile = $_SERVER['DOCUMENT_ROOT']."/www/FW_PHP_OO_MVC_JQUERY/Andiamo/view/assets/images/profile/".$nombreFichero;
+            $upfile = MEDIA_PATH.$nombreFichero;
         }else{
                 $error .=   "Invalid File...";
         }
@@ -93,7 +93,7 @@ function upload_files() {
                 return $return=array('result'=>false,'error'=>$error,'data'=>"");
             }
             //We need edit $upfile because now i don't need absolute route.
-            $upfile = '/www/FW_PHP_OO_MVC_JQUERY/Andiamo/view/assets/images/profile/'.$nombreFichero;
+            $upfile = MEDIA_PATH.$nombreFichero;
             return $return=array('result'=>true , 'error'=>$error,'data'=>$upfile);
         }
         ///////////avatar automatic CANVIAR
@@ -110,8 +110,8 @@ function remove_files(){
 	$name = $_POST['filename'];
   //echo json_encode($name);
   //exit;
-	if(file_exists($_SERVER['DOCUMENT_ROOT'].'/www/FW_PHP_OO_MVC_JQUERY/Andiamo/view/assets/images/profile/'.$_SESSION['nombreFichero'])){
-		unlink($_SERVER['DOCUMENT_ROOT'].'/www/FW_PHP_OO_MVC_JQUERY/Andiamo/view/assets/images/profile/'.$_SESSION['nombreFichero']);
+	if(file_exists(MEDIA_PATH.$_SESSION['nombreFichero'])){
+		unlink(MEDIA_PATH.$_SESSION['nombreFichero']);
 		return true;
 	}else{
 		return false;

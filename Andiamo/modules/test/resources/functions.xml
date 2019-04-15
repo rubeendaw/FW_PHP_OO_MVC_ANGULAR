@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<functions>
+    <function>
+        <name>test_view</name>
+        <uri>test_view</uri>
+    </function>
+    <function>
+        <name>prueba</name>
+        <uri>prueba</uri>
+    </function>
+</functions>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<functions>
+    <function>
+        <name>show_like</name>
+        <uri>show_like</uri>
+    </function>
+    <function>
+        <name>del_like</name>
+        <uri>del_like</uri>
+    </function>
+    <function>
+        <name>view_likes</name>
+        <uri>view_likes</uri>
+    </function>
+    <function>
+        <name>ins_like</name>
+        <uri>ins_like</uri>
+    </function>
+</functions>

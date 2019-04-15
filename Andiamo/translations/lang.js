@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     var lstorage = localStorage.getItem('language');
     (function(){
-        $("[data-tr]").jqTranslate('translations/tr', {forceLang: lstorage});
+        $("[data-tr]").jqTranslate('../../translations/tr', {forceLang: lstorage});
         // localStorage.lang = 'spanish';
         // localStorage.setItem('lang', 'spanish');
     // alert( lasCookies );
@@ -11,7 +11,7 @@ $(document).ready(function(){
     $("#english").on('click', function(event){
         (function(){
             localStorage.setItem('language', 'en');
-            $("[data-tr]").jqTranslate('translations/tr', {forceLang: "en", asyncLangLoad: false});
+            $("[data-tr]").jqTranslate('../../translations/tr', {forceLang: "en", asyncLangLoad: false});
             // localStorage['lang'] = 'spanish';
         })();
     });
@@ -19,14 +19,14 @@ $(document).ready(function(){
     $("#spanish").on('click', function(event){
         (function(){
             localStorage.setItem('language', 'es');
-            $("[data-tr]").jqTranslate('translations/tr', {forceLang: "es", asyncLangLoad: false});
+            $("[data-tr]").jqTranslate('../../translations/tr', {forceLang: "es", asyncLangLoad: false});
         })();
     });
     
     $("#valencia").on('click', function(event){
         (function(){
             localStorage.setItem('language', 'val');
-            $("[data-tr]").jqTranslate('translations/tr', {forceLang: "val", asyncLangLoad: false});
+            $("[data-tr]").jqTranslate('../../translations/tr', {forceLang: "val", asyncLangLoad: false});
         })();
       });
   });

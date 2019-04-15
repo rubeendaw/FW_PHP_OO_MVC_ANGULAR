@@ -6,5 +6,6 @@
  "contact" : "Contact",
  "login" : "Login",
  "language" : "Language",
- "logout" : "Logout"
+ "logout" : "Logout",
+ "profile" : "Profile"
 }
